@@ -84,7 +84,8 @@ $result = $conn->query($query);
               <span><?= $row['created_at'] ?></span>
             </div>
             <div class="text-gray-800">
-              <?= $row['message'] ?> <!-- XSS rentan di sini -->
+              <?= $row['message'] ?> <!-- XSS rentan di sini perbaikan sanitasi code dibawah ini -->
+              <!-- <?= htmlspecialchars ($row['message']) ?>  --> 
             </div>
           </div>
         <?php endwhile; ?>
